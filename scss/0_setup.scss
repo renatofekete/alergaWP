@@ -1,0 +1,7 @@
+// Vars
+$width : 1170px;
+// Mixins
+@mixin center() {
+    width: $width;
+    margin: 0 auto;
+}

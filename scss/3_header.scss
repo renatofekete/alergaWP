@@ -1,0 +1,16 @@
+header {
+    width: 100%;
+    background: pink;
+    margin-bottom: 40px;
+}
+.header_inner {
+    @include center();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.header_logo {
+    width: 50%;
+}

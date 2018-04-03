@@ -1,0 +1,21 @@
+.nav_container {
+    width: 100%;
+    background: black;
+    //position: fixed;
+    //top: 0;
+}
+nav {
+    @include center();
+    ul {
+        display: flex;
+        a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            &:hover {
+                background: white;
+                color: black;
+            }
+        }
+    }
+}
