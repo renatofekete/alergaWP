@@ -1,35 +1,30 @@
 .content_container {
-    @include center();
-    display: flex;
-    flex-wrap: wrap;
+  @include center();
+  display: flex;
+  flex-wrap: wrap;
 }
 .content {
-    width: 100%;
+  width: 100%;
 }
 .news {
-    position: relative;
-    width: 100%;
-    background: yellow;
-    a {
-        color: black;
-    }
+  position: relative;
+  width: 100%;
 }
 .news_text {
-    position: absolute;
-    bottom: 0;
-    background: rgba($color: pink, $alpha: 0.5);
-    width: 100%;
-    h1, h2 {
-        padding: 10px;
-    }
+  position: absolute;
+  bottom: 0;
+  background: rgba($color: $main_color, $alpha: 0.5);
+  width: 100%;
+  padding: 20px;
+  color: white;
 }
 .grid_news {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    .news {
-        width: 49.5%;
-        margin-top: 5px;
-    }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .news {
+    width: 49.5%;
+    margin-top: 5px;
+  }
 }

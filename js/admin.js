@@ -23,15 +23,15 @@ jQuery(document).ready(function($) {
 		});
 			mediaUploader.open();
 	});
-	// Aside Banner
-	$('#upload_asideBanner').on('click', function(e) {
+	// Main Banner
+	$('#upload_mainBanner').on('click', function(e) {
 		e.preventDefault();
 		if( mediaUploader ) {
 			mediaUploader.open();
 			return;
 		}
 		mediaUploader = wp.media.frames.file_frame = wp.media({
-			title: 'Choose Aside Banner',
+			title: 'Choose Main Banner',
 			button: {
 				text: 'Choose Banner'
 			},
@@ -41,8 +41,8 @@ jQuery(document).ready(function($) {
 		mediaUploader.on('select', function() {
 
 			attachment = mediaUploader.state().get('selection').first().toJSON();
-			$('#asideBanner_image').val(attachment.url);
-			$('#asideBanner_preview').css('background-image','url(' + attachment.url + ')')
+			$('#mainBanner_image').val(attachment.url);
+			$('#mainBanner_preview').css('background-image','url(' + attachment.url + ')')
 		});
 			mediaUploader.open();
 	});

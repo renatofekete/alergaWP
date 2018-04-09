@@ -48,35 +48,35 @@ function alergaBanneriPage()
 
 function alergaBanneriPageSettings()
 {
-    register_setting('alergaBanneri', 'aside_banner');
-    register_setting('alergaBanneri', 'aside_banner_link');
+    register_setting('alergaBanneri', 'main_banner');
+    register_setting('alergaBanneri', 'main_banner_link');
     register_setting('alergaBanneri', 'header_logo');
 
     add_settings_section('alerga-banneri', 'Banneri', 'alergaBanneri', 'alerga_banneri');
 
     add_settings_field('alerga-header-logo', 'Header Logo', 'alergaHeaderLogo', 'alerga_banneri', 'alerga-banneri');
-    add_settings_field('alerga-aside-banner', 'Aside Banner', 'alergaAsideBanner', 'alerga_banneri', 'alerga-banneri');
-    add_settings_field('alerga-aside-banner-link', 'Aside Banner Link', 'asideBannerLink', 'alerga_banneri', 'alerga-banneri');
+    add_settings_field('alerga-main-banner', 'Main Banner', 'alergaMainBanner', 'alerga_banneri', 'alerga-banneri');
+    add_settings_field('alerga-main-banner-link', 'Main Banner Link', 'mainBannerLink', 'alerga_banneri', 'alerga-banneri');
 }
 function alergaBanneri()
 {
 
 }
-function alergaAsideBanner()
+function alergaMainBanner()
 {
-    $asideBanner = esc_attr(get_option('aside_banner')); ?>
+    $mainBanner = esc_attr(get_option('main_banner')); ?>
     <div style="display: flex;">
-        <div style="margin-right: 20px;"><input type="button" value="Upload" id="upload_asideBanner" /></div>
-        <input type="hidden" name="aside_banner" value="<?php echo "$asideBanner" ?>" id="asideBanner_image"/>
-        <div id="asideBanner_preview" style="width: 300px; height: 100px; background-position: center; background-image: url(<?php echo "$asideBanner" ?>);"></div>
+        <div style="margin-right: 20px;"><input type="button" value="Upload" id="upload_mainBanner" /></div>
+        <input type="hidden" name="main_banner" value="<?php echo "$mainBanner" ?>" id="mainBanner_image"/>
+        <div id="mainBanner_preview" style="width: 300px; height: 100px; background-position: center; background-image: url(<?php echo "$mainBanner" ?>);"></div>
     </div>
 <?php
 
 }
-function asideBannerLink()
+function mainBannerLink()
 {
-    $asideBannerLink = esc_attr(get_option('aside_banner_link'));
-    echo '<input type="text" name="aside_banner_link" value="' . $asideBannerLink . '" placeholder="Asside Banner Link" class="regular-text"></input>';
+    $mainBannerLink = esc_attr(get_option('aside_banner_link'));
+    echo '<input type="text" name="main_banner_link" value="' . $mainBannerLink . '" placeholder="Asside Banner Link" class="regular-text"></input>';
 }
 
 function alergaHeaderLogo()

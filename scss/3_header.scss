@@ -1,16 +1,16 @@
 header {
-    width: 100%;
-    background: pink;
-    margin-bottom: 40px;
+  width: 100%;
+  background: $main_color;
+  margin-bottom: 40px;
 }
 .header_inner {
-    @include center();
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+  @include center();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .header_logo {
-    width: 50%;
+  width: 40%;
+  margin: 40px 0;
 }

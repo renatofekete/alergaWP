@@ -19,6 +19,7 @@ if (!function_exists('alergaTheme_setup')) :
     ));
     // Image size
     add_image_size( 'main-news', 1170, 585, true );
+    add_image_size('single-image', 780, 390, true);
     add_image_size( 'grid-news', 585, 293, true);
 }
 endif;

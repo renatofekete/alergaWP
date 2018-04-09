@@ -1,0 +1,30 @@
+article {
+  width: calc((100% / 3) * 2);
+  padding: 0 40px;
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .meta_info {
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    color: lighten($color: $font_color, $amount: 50);
+    i {
+      margin-right: 10px;
+      color: $main_color;
+      align-self: center;
+    }
+  }
+  .text {
+    margin: 20px 0;
+    p {
+      margin-bottom: 20px;
+      color: lighten($color: $font_color, $amount: 20);
+    }
+  }
+}
+aside {
+  width: calc(100% / 3);
+  background: lightblue;
+}

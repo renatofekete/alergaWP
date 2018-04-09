@@ -1,7 +1,11 @@
 // Vars
-$width : 1170px;
+$main_color: #f20448;
+$font_color: black;
+$header_font: "Open Sans", sans-serif;
+$font: "Roboto", sans-serif;
+$width: 1170px;
 // Mixins
 @mixin center() {
-    width: $width;
-    margin: 0 auto;
+  width: $width;
+  margin: 0 auto;
 }

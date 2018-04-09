@@ -3,7 +3,10 @@
 function includeFiles()
 {
     wp_enqueue_script('app', get_template_directory_uri() . '/js/app.js', array(), '1.0.0', true);
+    wp_enqueue_script( 'googleFont', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto', array() );
     wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('fontAwesome', 'https://use.fontawesome.com/releases/v5.0.9/css/all.css', array());
+
 }
 add_action('wp_enqueue_scripts', 'includeFiles');
 function includeAdminFiles() {
