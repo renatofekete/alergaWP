@@ -1,8 +1,8 @@
 article {
   width: calc((100% / 3) * 2);
   padding: 0 40px;
-  h1 {
-    font-size: 40px;
+  .title {
+    font-size: 32px;
     margin-bottom: 20px;
   }
   .meta_info {

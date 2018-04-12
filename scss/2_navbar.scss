@@ -14,8 +14,9 @@ nav {
     color: white;
     position: relative;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 14px;
+    font-family: $header_font;
     &:hover {
       &:before {
         width: 100%;

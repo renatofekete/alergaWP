@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
+body {
   font-family: $font;
   color: $font_color;
   line-height: 1;
@@ -18,6 +18,10 @@ h6 {
 }
 p {
   line-height: 1.6;
+  img {
+    width: auto;
+    height: auto;
+  }
 }
 img {
   display: block;

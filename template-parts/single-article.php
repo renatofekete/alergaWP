@@ -1,4 +1,6 @@
-<h1><?php the_title(); ?></h1>
+<div class="title">
+	<h1><?php the_title(); ?></h1>
+</div>
 <div class="meta_info">
 	<i class="far fa-clock"></i>
 	<p><?php echo get_the_date(); ?> | <?php echo get_the_time(); ?></p> 
