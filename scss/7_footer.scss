@@ -1,0 +1,25 @@
+footer {
+  margin-top: 40px;
+  width: 100%;
+  background: gray;
+  color: white;
+}
+.inner_footer {
+  @include center();
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  li {
+    margin-bottom: 10px;
+  }
+  .kontakt {
+    text-align: right;
+  }
+}
+.copy {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background: gray;
+}
