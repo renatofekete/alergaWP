@@ -2,7 +2,6 @@ header {
   width: 100%;
   background: $main_color;
   margin-bottom: 40px;
-  height: 75vh;
 }
 .header_inner {
   @include center();

@@ -5,17 +5,6 @@ article {
     font-size: 32px;
     margin-bottom: 20px;
   }
-  .meta_info {
-    display: flex;
-    font-size: 12px;
-    font-weight: bold;
-    color: lighten($color: $font_color, $amount: 50);
-    i {
-      margin-right: 10px;
-      color: $main_color;
-      align-self: center;
-    }
-  }
   .text {
     margin: 20px 0;
     p {
@@ -24,7 +13,33 @@ article {
     }
   }
 }
+.meta_info {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: lighten($color: $font_color, $amount: 30);
+  i {
+    margin-right: 10px;
+    color: $main_color;
+    align-self: center;
+  }
+}
 aside {
   width: calc(100% / 3);
-  background: lightblue;
+  padding: 20px;
+  .title {
+    margin-bottom: 10px;
+  }
+  .section_title {
+    text-align: center;
+  }
+  .news {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+  }
+  a {
+    color: $font_color;
+    font-weight: bold;
+  }
 }
