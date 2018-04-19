@@ -10,6 +10,7 @@ article {
     p {
       margin-bottom: 20px;
       color: lighten($color: $font_color, $amount: 20);
+      text-align: justify;
     }
   }
 }
