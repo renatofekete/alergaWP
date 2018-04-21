@@ -1,0 +1,10 @@
+.archive_news {
+  display: flex;
+  margin-bottom: 20px;
+  .thumbnail {
+    width: 30%;
+  }
+  .text {
+    width: 70%;
+  }
+}
